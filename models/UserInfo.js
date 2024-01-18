@@ -32,14 +32,11 @@ const userInfoSchema = new mongoose.Schema(
     // Yeni eklenen alanlar
     address: { type: String, default: null },
     phoneNumber: { type: String, default: null },
-    // Diğer yeni eklenen alanları ekleyebilirsiniz
   },
   {
     timestamps: true,
   }
 );
-
-// Diğer metotlar buraya eklenebilir
 
 const UserInfo = mongoose.model("UserInfo", userInfoSchema);
 
